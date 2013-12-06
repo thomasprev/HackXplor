@@ -9,7 +9,7 @@ class EventsController < ApplicationController
       @events = Event.order(:startdate).paginate(:page => params[:page], :per_page => 5)
       #raise @events
     else
-      @events = Event.all
+      @events = Event.order(:startdate)
     end
 
   end
