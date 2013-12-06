@@ -1,4 +1,8 @@
 HackXplore::Application.routes.draw do
+  resources :sectors
+
+  resources :countries
+
   resources :events
 
   devise_for :users

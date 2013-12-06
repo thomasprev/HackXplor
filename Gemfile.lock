@@ -48,10 +48,6 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.3)
-    countries (0.9.3)
-      currencies (~> 0.4.2)
-    country_select (1.2.0)
-    currencies (0.4.2)
     devise (3.2.1)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
@@ -159,8 +155,6 @@ DEPENDENCIES
   capistrano-rails
   capistrano-rvm
   coffee-rails (~> 4.0.0)
-  countries
-  country_select
   devise
   font-awesome-sass
   jbuilder (~> 1.2)
