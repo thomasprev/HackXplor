@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="2497294593">
+    <data-source source="LOCAL" name="Rails HackXplore: development" uuid="68cdf60b-bc9f-4c64-8a9d-0977bcc28578">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:hackexplor</jdbc-url>
+      <libraries>
+        <library>
+          <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/sqlite-jdbc-3.7.6.3-20110609.081603-3.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="PostgreSQL - hackexplor@localhost" uuid="a6737884-46c7-4b77-b067-a6f09eebef89">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/hackexplor</jdbc-url>
+      <default-dialect>postgresql</default-dialect>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+

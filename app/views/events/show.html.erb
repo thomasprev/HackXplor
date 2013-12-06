@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Hyperlink:</strong>
+  <%= @event.hyperlink %>
+</p>
+
+<p>
+  <strong>Startdate:</strong>
+  <%= @event.startdate %>
+</p>
+
+<p>
+  <strong>Enddate:</strong>
+  <%= @event.enddate %>
+</p>
+
+<p>
+  <strong>Eventname:</strong>
+  <%= @event.eventname %>
+</p>
+
+<p>
+  <strong>Eventtype:</strong>
+  <%= @event.eventtype %>
+</p>
+
+<p>
+  <strong>Sector:</strong>
+  <%= @event.sector %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @event.country %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @event.city %>
+</p>
+
+<p>
+  <strong>Source:</strong>
+  <%= @event.source %>
+</p>
+
+<%= link_to 'Edit', edit_event_path(@event) %> |
+<%= link_to 'Back', events_path %>

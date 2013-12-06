@@ -1,0 +1,43 @@
+<h1>Listing events</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Hyperlink</th>
+      <th>Startdate</th>
+      <th>Enddate</th>
+      <th>Eventname</th>
+      <th>Eventtype</th>
+      <th>Sector</th>
+      <th>Country</th>
+      <th>City</th>
+      <th>Source</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @events.each do |event| %>
+      <tr>
+        <td><%= event.hyperlink %></td>
+        <td><%= event.startdate %></td>
+        <td><%= event.enddate %></td>
+        <td><%= event.eventname %></td>
+        <td><%= event.eventtype %></td>
+        <td><%= event.sector %></td>
+        <td><%= event.country %></td>
+        <td><%= event.city %></td>
+        <td><%= event.source %></td>
+        <td><%= link_to 'Show', event %></td>
+        <td><%= link_to 'Edit', edit_event_path(event) %></td>
+        <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Event', new_event_path %>

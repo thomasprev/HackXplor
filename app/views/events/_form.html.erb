@@ -1,0 +1,53 @@
+<%= form_for(@event) do |f| %>
+  <% if @event.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@event.errors.count, "error") %> prohibited this event from being saved:</h2>
+
+      <ul>
+      <% @event.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :hyperlink %><br>
+    <%= f.text_field :hyperlink %>
+  </div>
+  <div class="field">
+    <%= f.label :startdate %><br>
+    <%= f.date_select :startdate %>
+  </div>
+  <div class="field">
+    <%= f.label :enddate %><br>
+    <%= f.date_select :enddate %>
+  </div>
+  <div class="field">
+    <%= f.label :eventname %><br>
+    <%= f.text_field :eventname %>
+  </div>
+  <div class="field">
+    <%= f.label :eventtype %><br>
+    <%= f.text_field :eventtype %>
+  </div>
+  <div class="field">
+    <%= f.label :sector %><br>
+    <%= f.text_field :sector %>
+  </div>
+  <div class="field">
+    <%= f.label :country %><br>
+    <%= f.text_field :country %>
+  </div>
+  <div class="field">
+    <%= f.label :city %><br>
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :source %><br>
+    <%= f.text_field :source %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
