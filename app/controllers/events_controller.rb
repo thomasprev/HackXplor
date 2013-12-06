@@ -6,7 +6,7 @@ class EventsController < ApplicationController
   def index
     if params[:start]
 
-      @events = Event.where("events.id > ?", params[:start]).limit(5)
+      @events = Event.where("events.id > ?", params[:start]).order(:startdate).limit(5)
       #raise @events
     else
       @events = Event.all
